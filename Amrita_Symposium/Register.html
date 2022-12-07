@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="Style_Register.css">
+</head>
+<body bgcolor="#000026"> 
+	<div class="logo">
+		<img src="amrita_logo.svg" style="width:150px;height=100px;">
+	</div>
+	<div class="nav">
+	<ul><li><a href="Symposi_home.html">Home</a></li>
+		<li><a href="Project_Paper_Presentation.html">Project Paper Presentation</a></li>
+		<li><a href="#Web Development">Web Development</a></li>
+		<li><a href="Conference.html">Conference</a></li>
+		<li><a href="Hackathon.html">Hackathon</a></li>
+	</ul>
+	</div><br><br>
+	<div class="title">
+		<h1> <u>Technical Symposium 2k22</u> </h1>
+	</div>
+	<h1 style="text-align:center;color:#D3004C">Registration Form!!!</h1><br>
+	<form action="test.php" method="GET">
+	<div class="tab">
+	<table>
+		<tr><td><label for="user_name">Name: </label></td>
+			<td><input type='text' minlength="5" name='username' id='user_name' class="tb1" required></td></tr>
+		<tr><td><label for="user_mail"> Email ID : </label></td>
+			<td><input type='text' name='mail' id='user_mail' class="tb1" required></td></tr>
+		<tr><td><label for="Dob">Date of Birth : </label></td>
+			<td><input type="date" name="DOB" class="tb1"/></td></tr>
+		<tr><td><label for="ph_num"> Mobile/Phone : </label></td>
+			<td><input type='text' name='phone' id='ph_num' pattern=[0-9]{10} class="tb1" required></td></tr>
+		<tr><td><label for="clg">College Name : </label></td>
+			<td><input type='text' name='college' id='clg' class="tb1" required></td></tr>
+		<tr><td><label for="city">City : </label></td>
+			<td><input type='text' name='city' id='city' class="tb1"></td></tr>
+		<tr><td><label for="Event">Select Event :</td>
+			<td><select name="event">
+										<option value="none" Selected disabled hidden>Select event</option>
+										<option value="hac">Hackathon</option>
+										<option value="conf">Conference</option>
+										<option value="WD">Web Development</option>	
+										<option value="PPP">Project Paper Presentation</option></select></td></tr>
+		<tr><td><label for="team"> Team mates: </label></td>
+			<td><textarea rows="5" col="10" name='remarks' id='rem'class="tb1"></textarea></td></tr>
+		<tr><td align="center"><input type='submit' name='submit' value='Enroll' style="margin-left:100px;">
+			<input type='reset' name='submit' value='Reset' class="tb1"></td></tr>
+	</table>
+	</div>
+	</form>	
+</body>
+</html>	
+	

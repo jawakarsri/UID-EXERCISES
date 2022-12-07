@@ -1,0 +1,145 @@
+<!DOCTYPE hmtl>
+    <head>
+            <style>
+                img
+                {
+                    height: 400px;
+                }
+                body 
+                {
+                    background-image: "background.jpg";
+                    background-image:linear-gradient(to top right,red,blue);
+                }   
+              .ab{
+                background-color:#aef900;
+	            color: rgb(255, 0, 0);
+	            text-decoration: none;
+	            border: 2px solid transparent;
+	            font-weight: bold;
+	            padding: 13px 30px;
+	            border-radius: 30px;
+	            transition: .4s; 
+              }
+                div>a{
+                    padding-left: 12px;
+
+                }
+                .txt{
+                    text-decoration: none;
+                    color: rgb(0, 0, 0);
+                }
+                a.txt:hover{
+                    color: #ffffff;
+                }
+
+
+            </style>
+            <script>
+            var i=0;
+            var j=0;
+            var d=0;
+            var h=0;
+            var s=0;
+            function sitstand()
+            {
+                if(i==0)
+                {
+                    document.getElementById("switch").src = "1.jpeg";
+                    i=1;
+                }
+                else
+                {
+                    document.getElementById("switch").src = "2.jpg";
+                    i=0;
+                }
+            }
+            function dog()
+            {
+                
+                if(j==0)
+                {
+                    document.getElementById("pet").src = "4.jpeg";
+                    j=1;
+                }
+                else
+                {
+                    document.getElementById("pet").src = "3.jpeg";
+                    j=0;
+                }
+            }
+            function dogrun()
+            {
+                if(d==0)
+                {
+                    document.getElementById("run").src = "5.jpg";
+                    d=1;
+                }
+                else if(d==1)
+                {
+                    document.getElementById("run").src = "8.jpg";
+                    d=0;
+                }
+                
+            }
+            function eatingdog()
+            {
+                if(h==0)
+                {
+                    document.getElementById("eat").src="10.jpg";
+                    h=1;
+                }
+
+                else
+                {
+                    document.getElementById("eat").src="9.jpg";
+
+                    h=0;
+                }
+
+            }
+
+            function handshake()
+            {
+                if(s==0)
+
+                {
+                    document.getElementById("shake").src="7.jpg";
+                    s=1;
+                }
+                else
+                {
+                    document.getElementById("shake").src="6.jpg";
+                    s=0;
+                }
+            }
+        </script>
+</head>
+<body>
+    
+    <div class="ab" >
+        
+        <a class="txt" href="index.html">Mouse Event</a>
+        <a class="txt" href=".html">Regular Expression</a>
+          
+    </div>
+    <p style="color: rgb(255, 247, 0);">NAVANEETHAN.S<br> CH.EN.U4CYS21048</p> 
+
+    <center><h1 style="color: rgb(255, 247, 0);">GAMES</h1>   
+        <h3 style="color: rgb(255, 247, 0);">Left Click</h3>
+
+        <img src="1.jpeg"  onclick="sitstand()" id="switch">
+        <br>
+        <h3 style="color: rgb(255, 247, 0);">Hover</h3>
+        <img src="3.jpg" onmouseenter="dog()" onmouseleave="dog()" id="pet">
+        <br>
+        <h3 style="color: rgb(255, 247, 0);">Double Click</h3>
+        <img src="7.jpeg" height="300px"  ondblclick="handshake()" id="shake">
+        <br>
+        <h3 style="color: rgb(255, 247, 0);">Right Click</h3>
+        <img src="10.jpg" height="300px" contextmenu="eatingdog1" oncontextmenu="eatingdog()" id="eat">
+        <br>
+        <h3 style="color: rgb(255, 247, 0);">Move Mouse</h3>
+        <img src="5.jpg" onmousedown="dogrun()" onmouseup="dogrun()" id="run">
+    </center>
+</body>
+</html>

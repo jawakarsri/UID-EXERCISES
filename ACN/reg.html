@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="sty.css">
+
+</head>
+
+<body>
+ 
+  <a href="index.html" style="text-decoration:none;color:white">Home</a>
+  <form>
+    <div class="container">
+      <center>
+        <h1>Registeration Form</h1>
+      </center>
+      <hr>
+      <label> Firstname </label>
+      <input type="text" name="firstname" placeholder="Firstname" size="15" required /> <br>
+      <label> Middlename: </label>
+      <input type="text" name="middlename" placeholder="Middlename" size="15" required /> <br>
+      <label> Lastname: </label>
+      <input type="text" name="lastname" placeholder="Lastname" size="15" required /> <br>
+      <input type="texr">
+      <div>
+        <label>
+          Gender :
+        </label><br>
+        <input type="radio" value="Male" name="gender" checked> Male
+        <input type="radio" value="Female" name="gender"> Female
+        <input type="radio" value="Other" name="gender"> Other
+
+      </div>
+      DOB&nbsp;&nbsp;&nbsp;
+      <input type="date">
+      <div>
+        Organization
+        <input type="text" name="organization" placeholder="Organization Name">
+        <label>
+          Event :
+        </label>
+
+
+        <select>
+          <option value="Event">Event</option>
+          <option value="Hackathon">Hackathon - Fess 250Rs</option>
+          <option value="Research Project">Research Project - Fees 500Rs</option>
+          <option value="Paper Presentaton">Paper Presentation - Fees 300Rs</option>
+          <option value="Ideathon">Ideathon - Fees 200Rs</option>
+        </select>
+      </div>
+      <label>
+        Phone :
+      </label>
+      <input type="text" name="phone" placeholder="phone no." size="10"/ required> <br>
+      Team Details
+      <textarea cols="80" rows="5" placeholder="Team Details" value="address" required></textarea>
+      <label> ID Proof [ID Card/Aadhar Card]</label>&nbsp;&nbsp;&nbsp;
+      <input type="file" name="idproof"><br><br>
+      Enter the CAPTCHA
+      <div id="captchaBackground">
+        <canvas id="captcha">captcha text</canvas>
+        <input id="textBox" type="text" name="text">
+        <div id="buttons">
+          <input id="submitButton" type="submit">
+          <button id="refreshButton" type="submit">Refresh</button>
+        </div>
+        <span id="output"></span>
+      </div>
+      <script src="script.js"></script>

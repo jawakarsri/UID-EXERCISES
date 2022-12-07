@@ -1,0 +1,152 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.about img{
+	height: 200px;;
+	width: 200px;
+	margin-top: 1px;
+	margin-left: 900px;
+}
+
+.about{
+	width: 100%;
+	padding: 10px 1px;
+	color: rgb(255, 0, 0);
+	background-color: aquamarine;
+} 
+
+.about-text{
+	width: 550px;
+	margin-top: -250px;
+}
+.container{
+	font-size: 35px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 16px  40px;
+}
+nav ul li a{
+	color: rgb(249, 1, 1);
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+nav ul li a:hover{
+	
+	transition: .4s;
+}
+.btn{
+	
+	color: rgb(104, 17, 17);
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s; 
+}
+.btn:hover{
+	transform: scale(1.2);
+}
+.content{
+	position: absolute;
+	top: 50%;
+	left:8%;
+	transform: translateY(-50%);
+}
+
+
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.about-text h2{
+	color: rgb(255, 0, 0);
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about-text h5{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+.about-text p{
+	color: rgba(0, 34, 255, 0.8);
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+
+
+.title h2{
+	color: white;
+	font-size: 75px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
+
+
+h5{
+	color: white;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+
+footer{
+	position: relative;
+	width: 100%;
+	height: 90px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	color: white;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+footer p:nth-child(2){
+	color: white;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+
+.end{
+	position: absolute;
+	
+	bottom: 35px;
+	font-size: 14px; 
+}
+
+.box-2{
+	padding: 0px 50px;
+	margin-top: 30px;
+}
+

@@ -1,0 +1,111 @@
+#myvideo {
+    position: absolute;
+z-index: -1;
+top: 0;
+left: 0;
+width: 100%; 
+height: 100%;
+object-fit: cover;
+}
+.body{
+    overflow: auto;
+    background-image: linear-gradient(to left bottom, #aa274f, #1bc4ea, #237bba, #decee6, #ffffff);
+
+}
+.square {
+    width: 200px;
+    height: 45px;
+    background-color: #AA274F;
+    border-radius: 8px;
+    margin-bottom: 24px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .square:hover {
+    transform: scale(1.4);
+  }
+  
+  .square.has-transition {
+    transition: transform 150ms ease-in-out;
+  }
+  
+  .square span {
+    font-size: 1.2em;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar {
+    overflow: hidden;
+    background-color: #aa274ed5;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .navbar a.active {
+    background-color: #ddd;;
+    color: black;
+  }

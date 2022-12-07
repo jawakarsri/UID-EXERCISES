@@ -1,0 +1,49 @@
+*{ 
+	background-image: url('Background1.jpeg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	margin:0;
+	padding:0;
+	}
+		
+.logo{
+	padding-top:10px;
+	padding-bottom:10px;
+	margin:0;
+	padding-left:570px;
+   }	
+
+.title{
+    text-align:center;
+	color:white;
+	}
+
+.speakers ol{
+	margin-left:100px;
+	font-style:strong;
+	font-family:Times New Roman;
+	font-size:20px;
+	color:#F0E68C;
+}
+
+.speakers img{
+	margin-left:50px;
+	border-color:#D3004C;
+}
+
+.speakers p{
+	float:left;
+	padding-left:200px;
+}
+
+.nav ul li{
+	float:right;
+	display:inline-block;
+	padding:10px;
+}
+
+.nav ul li a{
+	text-decoration:none;
+	color:white;
+}

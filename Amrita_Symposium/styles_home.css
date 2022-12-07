@@ -1,0 +1,51 @@
+*{ 
+	background-image: url('Background1.jpeg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	margin:0;
+	padding:0;
+	}
+		
+.logo{
+	padding-top:10px;
+	padding-bottom:10px;
+	margin:0;
+	padding-left:570px;
+   }	
+
+.title{
+    text-align:center;
+	color:white;
+	}
+
+.nav a{
+	float:right;
+	padding-left:10px;
+	margin-right:15px;
+	text-decoration:none;
+	color:white;
+}
+	
+.events{
+	font-size:25px;
+	padding-left:100px;
+	font-family:Times New Roman;
+	color:#D3004C;
+	}
+	
+.events ul{
+	padding-left:100px;
+}
+	
+.events a{
+	text-decoration:none;
+	color:white;
+	}
+
+.venue{
+	padding-top:10px;
+	margin-bottom:50px;
+	color:white;
+}
+
