@@ -1,43 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EMI Calculator</title>    
-        <link rel="stylesheet" href="style.css">
+	<title>Capstone Project Submission</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			font-size:20px;
+			align-items:center;
+			}
+			
+		body{
+            background-image: url("back.jpg");
+            height: 300px;
+            top:0%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: black;
+        }
+	
+			
+		.container{
+			background-color:rgba(256,256,256,0.4);
+			max-width:500px;
+			padding:30px 30px 30px;
+			margin:50px auto 100px auto;
+			border-radius:20px;
+			}
+			
+		table td{
+			padding:10px 0px 10px; 
+			}
+			
+		table td a{
+			font-size:20px;
+			text-decoration:none;
+			color:black;
+			transition-duration:1s;
+			}
+		
+		table td a:hover{
+			background-color:rgba(256,0,0,0.2);
+			padding:5px;
+			border-radius:5px;
+			text-decoration:underline;
+			}
+	</style>
 </head>
 <body>
-    <i><marquee><h1>DINAKAR S
-CH.EN.U4CYS21013</h1></marquee></i>
-    <form action="" class="container">
-        <p class="heading">EMI Calculator</p>
-        <div class="input-container">
-            <label for="amount">Loan Amount</label>
-            <input type="number" id="amount" required>
-        </div>
-        <div class="input-container">
-            <label for="interest">Interest Rate(%)</label>
-            <input type="number" id="interest" step="0.01" required>
-        </div>
-        <div class="input-container loan-tenure-container">
-            <label for="loanTenure">Loan Tenure</label>
-            <input type="text" id="loanTenure" required>
-            <div class="radio-container">
-            <input type="radio" name="btn" id="year"><label for="year">Year</label>
-            <input type="radio" name="btn" id="month" ><label for="month">Month</label>
-            </div>
-        </div>
-        <div class="submit-container">
-            <input type="submit" value="submit" id="calculate" >
-        </div>
-        <div class="output">
-            <p>Loan EMI  <span id="emi">&#8377;</span></p>
-            <p>Total Interest Payable  <span id="totalIntrest">&#8377;</span></p>
-            <p>Total Payment(Principal + Interest) <span id="totalPayment">&#8377;</span></p>
-        </div>
-    </form>
-
-    <script src="script.js"></script>
+	<b><p style="color:white;max-width:175px;float:left;padding:10px;" >Dinesh kumar.N<br>CH.EN.U4CYS21014</p></b>
+	<center><img id="logo" src="amrita_logo.svg" height="125px" width="275px" style="margin-right:150px"></center>
+	<div class="container">
+	<center><h1>Capstone Project Submission</h1></center>
+	<table>
+		<tr>
+			<td>Activity 1</td>
+			<td><a href="Travel_System/Travel_System.html"> - Travel Agency</td>
+		</tr>
+		<tr>
+			<td>Activity 2</td>
+			<td><a href="Amrita_Symposium/Symposi_home.html"> - Science Symposium</td>
+		</tr>
+		<tr>
+			<td>Activity 3</td>
+			<td><a href="Registration Form/Assignment-1.html"> - Registration Form</td>
+		</tr>
+		<tr>
+			<td>Activity 4</td>
+			<td><a href="Amrita_Cybernation_Website/Amrita_Cybernation.html"> - Amrita Cybernation 2k22</td>
+		</tr>
+		<tr>
+			<td>Activity 5</td>
+			<td><a href="Resume/Resume.html"> - Resume</td>
+		</tr>
+		<tr>
+			<td>Activity 6</td>
+			<td><a href="Deposit Calculator/RD Calculator.html"> - Deposit Calculator</td>
+		</tr><tr>
+			<td>Activity 7</td>
+			<td><a href="Form Validation/Registration_Form.html"> - Form Validation</td>
+		</tr>
+		<tr>
+			<td>Activity 8</td>
+			<td><a href="Mouse_Events/JS_Mouse_Events.html"> - Javascript Mouse events and Regular Expressions</td>
+		</tr>
+		</div>
+		
 </body>
 </html>
