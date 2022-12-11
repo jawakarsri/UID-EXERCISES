@@ -1,96 +1,43 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Capstone Project Submission</title>
-	<style>
-		*{
-			margin:0;
-			padding:0;
-			font-size:20px;
-			align-items:center;
-			}
-			
-		body{
-            background-image: url("k3rh3kjleou41.jpg");
-            height: 300px;
-            top:0%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            color: black;
-        }
-	
-			
-		.container{
-			background-color:rgba(256,256,256,0.4);
-			max-width:500px;
-			padding:30px 30px 30px;
-			margin:50px auto 100px auto;
-			border-radius:20px;
-			}
-			
-		table td{
-			padding:10px 0px 10px; 
-			}
-			
-		table td a{
-			font-size:20px;
-			text-decoration:none;
-			color:black;
-			transition-duration:1s;
-			}
-		
-		table td a:hover{
-			background-color:rgba(256,0,0,0.2);
-			padding:5px;
-			border-radius:5px;
-			text-decoration:underline;
-			}
-		
-	</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>    
+        <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="kk">
-	<b><p style="color:white;max-width:175px;float:left;padding:10px;" >JAWAKAR <br>CH.EN.U4CYS21025</p></b>
-	<center><img id="logo" src="amrita_logo.svg" height="145px" width="275px" style="margin-right:150px"></center>
-	<div class="container">
-	<center><h1>Capstone Project Submission</h1></center>
-	<table>
-		<tr>
-			<td>Activity 1</td>
-			<td><a href="Travel/home.html"> - Travel Agency</td>
-		</tr>
-		<tr>
-			<td>Activity 2</td>
-			<td><a href="Amrita_Symposium/Symposi_home.html"> - Science Symposium</td>
-		</tr>
-		<tr>
-			<td>Activity 3</td>
-			<td><a href="FORMS/home.html"> - Registration Form</td>
-		</tr>
-		<tr>
-			<td>Activity 4</td>
-			<td><a href="4.Conclave/Amrita_Cybernation.html"> - Amrita Cybernation 2k22</td>
-		</tr>
-		<tr>
-			<td>Activity 5</td>
-			<td><a href="5.RESUME/jawa.html"> - Resume</td>
-		</tr>
-		<tr>
-			<td>Activity 6</td>
-			<td><a href="EMI Calculator/index.html"> - BMI Calculator</td>
-		</tr><tr>
-			<td>Activity 7</td>
-			<td><a href=" FORM VALIDATION/home.html"> - Form Validation</td>
-		</tr>
-		<tr>
-			<td>Activity 8</td>
-			<td><a href="MOUSE/index.html"> - Javascript Mouse events and Regular Expressions</td>
-		</tr>
-		<tr>
-			<td>Activity 9</td>
-			<td><a href="https://dinakar-s.github.io/marshmalow/"> - Capstone Project</td>
-		</tr>
-		</div>
-		</div>
-		
+    <i><marquee><h1>DINAKAR S
+CH.EN.U4CYS21013</h1></marquee></i>
+    <form action="" class="container">
+        <p class="heading">EMI Calculator</p>
+        <div class="input-container">
+            <label for="amount">Loan Amount</label>
+            <input type="number" id="amount" required>
+        </div>
+        <div class="input-container">
+            <label for="interest">Interest Rate(%)</label>
+            <input type="number" id="interest" step="0.01" required>
+        </div>
+        <div class="input-container loan-tenure-container">
+            <label for="loanTenure">Loan Tenure</label>
+            <input type="text" id="loanTenure" required>
+            <div class="radio-container">
+            <input type="radio" name="btn" id="year"><label for="year">Year</label>
+            <input type="radio" name="btn" id="month" ><label for="month">Month</label>
+            </div>
+        </div>
+        <div class="submit-container">
+            <input type="submit" value="submit" id="calculate" >
+        </div>
+        <div class="output">
+            <p>Loan EMI  <span id="emi">&#8377;</span></p>
+            <p>Total Interest Payable  <span id="totalIntrest">&#8377;</span></p>
+            <p>Total Payment(Principal + Interest) <span id="totalPayment">&#8377;</span></p>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
 </body>
 </html>
