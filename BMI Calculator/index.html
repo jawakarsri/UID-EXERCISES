@@ -1,31 +1,43 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>BMI Calculator</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>    
+        <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-    	<div class="panel">
-    		<h2 class="text-center">Check your BMI</h2>
-    		
-    			<p id="introText" class="text-center">Enter your weight and height below to check your BMI results</p>
-    			
-    			<form>
-    				<div id="weightInput">
-    					<p>Put your weight in here (KG)</p>
-    		     		<input id="weight" type="number" pattern="[0-9]*" name="a" />
-    				</div>
-    				<div id="heightInput">
-    					<p>And your height in here (CM)</p>
-	    				 <input id="height" type="number" pattern="[0-9]*" name="b"/> 
-    				</div>
-    		     <button type="button" class="btn" onclick="calculate()">Calculate BMI</button>
-    		</form>
-    		<div id="results" class="text-center">Your BMI results will appear here</div>
-    	</div>
-    </div>
-	<script src="main.js"></script>
+    <i><marquee><h1>DINAKAR S
+CH.EN.U4CYS21013</h1></marquee></i>
+    <form action="" class="container">
+        <p class="heading">EMI Calculator</p>
+        <div class="input-container">
+            <label for="amount">Loan Amount</label>
+            <input type="number" id="amount" required>
+        </div>
+        <div class="input-container">
+            <label for="interest">Interest Rate(%)</label>
+            <input type="number" id="interest" step="0.01" required>
+        </div>
+        <div class="input-container loan-tenure-container">
+            <label for="loanTenure">Loan Tenure</label>
+            <input type="text" id="loanTenure" required>
+            <div class="radio-container">
+            <input type="radio" name="btn" id="year"><label for="year">Year</label>
+            <input type="radio" name="btn" id="month" ><label for="month">Month</label>
+            </div>
+        </div>
+        <div class="submit-container">
+            <input type="submit" value="submit" id="calculate" >
+        </div>
+        <div class="output">
+            <p>Loan EMI  <span id="emi">&#8377;</span></p>
+            <p>Total Interest Payable  <span id="totalIntrest">&#8377;</span></p>
+            <p>Total Payment(Principal + Interest) <span id="totalPayment">&#8377;</span></p>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
 </body>
 </html>
